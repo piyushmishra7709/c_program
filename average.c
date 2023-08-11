@@ -2,7 +2,7 @@
 void main()
 {
 int a=10;
-int b=5;
-int avg=a+b/2;
+int b=6;
+int avg=(a+b)/2;
 printf("Average is %d",avg);
 }
