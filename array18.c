@@ -1,13 +1,16 @@
 #include <stdio.h>
 int main() 
 {
-    int count=0;
-    int a[]={12,34,56,78,90,56,12,56,45};
+    int a[]={12,34,56,42,12,68,34,12,56};
     for(int i=0; i<9; i++){
-            if(a[i]==56){
+        int num=a[i];
+        int count=0;
+        for(int j=0; j<9; j++){
+            if(a[j]==num){
                 count=count+1;
             }
+        }
+        printf("Occurance of %d in array is %d\n",a[i],count);
     }
-    printf("Occurance of 56 in array is :%d",count);
     return 0;
 }
